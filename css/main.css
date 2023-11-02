@@ -1,0 +1,125 @@
+/* Stili Macro Aree */
+#wrapper-up {
+    height: calc(100vh - 90px);
+    background-color: #141922;
+    display: flex;
+}
+
+#sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+}
+
+#main-content {
+    flex-grow: 1;
+    height: 100%;
+
+    /* DEBUG */
+    background-color: green;
+}
+
+/* Stili Sidebar */
+/* Stili Logo */
+#sidebar-up {
+
+}
+
+.logo-box {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.logo-box img {
+    width: 70%;
+}
+
+/* Stili barra di navigazione */
+nav {
+    margin-bottom: 20px;
+    
+}
+
+nav ul li {
+    padding: 8px 20px;
+}
+
+nav ul .fa-solid {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+nav ul .fa-magnifying-glass {
+    margin-right: 8px;
+}
+
+nav .active {
+    border-left: 3px solid #adff2f;
+}
+
+nav .active a, nav .active i {
+    color: white;
+}
+
+ul li a, ul li i {
+    font-size: 16px;
+    color: #a3a3a3a1;
+}
+
+ul li a:hover {
+    color: #ffff;
+}
+
+/* Stili barra creazione playlist */
+.playlist-section {
+    padding-left: 20px;
+    color: #ffff;
+    /* DEBUG */
+    height: calc(100vh - 420px);
+}
+
+.playlist-section .section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.add-playlist-box {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.add-playlist-box a {
+    color: #a3a3a3a1;
+}
+
+.add-playlist-box a:hover {
+    color: #ffff;
+}
+
+.add-playlist-box i {
+    font-size: 20px;
+    color: #000000;
+    padding: 8px 10px;
+    background-color: #a3a3a3;
+    margin-right: 12px;
+}
+
+.add-playlist-box i:hover {
+    background-color: #ffff;
+}
+
+.playlist-section li {
+    margin: 15px 0;
+}
+
+#sidebar-down {
+
+    /* DEBUG*/
+    height: 80px;
+    background-color: cornflowerblue;
+}
