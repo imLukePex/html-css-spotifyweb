@@ -16,7 +16,6 @@
     height: 100%;
 
     /* DEBUG */
-    background-color: green;
 }
 
 /* Stili Sidebar */
@@ -36,7 +35,7 @@
     width: 70%;
 }
 
-/* Stili barra di navigazione */
+/* Stili sezione di navigazione */
 nav {
     margin-bottom: 20px;
     
@@ -72,12 +71,13 @@ ul li a:hover {
     color: #ffff;
 }
 
-/* Stili barra creazione playlist */
+/* Stili sezione creazione playlist */
 .playlist-section {
     padding-left: 20px;
     color: #ffff;
     /* DEBUG */
-    height: calc(100vh - 420px);
+    height: calc(100vh - 416px);
+    overflow-y: auto;
 }
 
 .playlist-section .section-title {
@@ -90,7 +90,7 @@ ul li a:hover {
     font-size: 18px;
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .add-playlist-box a {
@@ -114,12 +114,51 @@ ul li a:hover {
 }
 
 .playlist-section li {
-    margin: 15px 0;
+    padding: 10px 0;
 }
 
+/* Stili sezione profilo  */
 #sidebar-down {
-
     /* DEBUG*/
-    height: 80px;
-    background-color: cornflowerblue;
+}
+
+.profile-section {
+    padding: 0 20px;
+}
+
+.install-box {
+    border-bottom: 1px solid #a3a3a3a1;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.install-box a {
+    display: flex;
+    align-items: center;
+    color: #a3a3a3a1;
+}
+
+.install-box i {
+    font-size: 6px;
+    border: 1px solid #a3a3a3a1;
+    border-radius: 40px;
+    padding: 3px 4px;
+    margin-right: 10px;   
+}
+
+.profile-box {
+    font-size: 18px;
+    padding: 8px 0;
+    color: #ffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.profile-box img {
+    width: 15%;
+    margin-right: 10px; 
+    background: #a3a3a3a1;
+    padding: 2px 3px;
+    border-radius: 40px;
 }

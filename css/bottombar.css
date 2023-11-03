@@ -1,4 +1,124 @@
 #bottom-bar {
     height: 90px;
     background-color: #282828;
+    display: flex;
+}
+
+.left-section, .right-section {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.center-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+/* Stili Sezione Sinistra */
+.left-section .cover-box {
+    width: 10%;
+}
+
+.left-section .cover-box img {
+    width: 100%;
+}
+
+.left-section .music-textbox {
+    padding-left: 15px;
+}
+
+.music-textbox .song-title a {
+    color: #ffff;
+    font-weight: 600;
+}
+
+.music-textbox .author a {
+    color: #a3a3a3a1;
+    font-size: 13px;
+}
+
+.left-section .icons-left {
+    padding-left: 50px;
+}
+
+.icons-left a {
+    color: #a3a3a3a1;
+    font-size: 17px;
+    padding: 0 5px;
+}
+
+/* Stili Sezione Centrale */
+.center-up, .center-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-section .center-up .playbar-icons {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #c1c1c1;
+}
+
+.fa-play {
+    color: black;
+    background: #ffff;
+    border-radius: 40px;
+    padding: 9px 12px;
+}
+
+.center-section .center-down {
+    margin-top: 8px;
+    color: #ffff;
+}
+
+.center-down .song-timeline {
+    width: 600px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #a3a3a3a1;
+}
+
+.song-timeline .song-play {
+    width: 100px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+
+.center-down .song-time {
+    margin: 0 10px;
+    font-size: 12px; 
+}
+
+/* Stili Sezione Destra */
+.right-section {
+    justify-content: flex-end;
+}
+
+.right-section .icons-right {
+    padding-right: 20px;
+}
+
+.icons-right a {
+    color: #c1c1c1;
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+.right-section .volume-bar {
+    width: 140px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #a3a3a3a1;
+}
+
+.volume-bar .current-volume {
+    width: 40px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #ffff;
 }
