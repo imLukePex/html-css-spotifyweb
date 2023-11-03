@@ -16,20 +16,17 @@
 #main-content {
     flex-grow: 1;
     height: 100%;
-
-    /* DEBUG */
 }
 
-/* Stili Sidebar */
-/* Stili Logo */
-#sidebar-up {
+/* 
 
-}
+Stili Sidebar 
 
+*/
+
+/* Stili Sezione Logo */
 .logo-box {
     margin: 25px 0;
-    display: flex;
-    align-items: center;
     padding-left: 25px;
 }
 
@@ -37,29 +34,29 @@
     width: 70%;
 }
 
-/* Stili sezione di navigazione */
-nav {
+/* Stili Sezione di Navigazione */
+#sidebar nav {
     margin-bottom: 20px;
 }
 
-nav ul li {
+#sidebar nav ul li {
     padding: 8px 20px;
 }
 
-nav ul .fa-solid {
+#sidebar nav ul .fa-solid {
     font-size: 22px;
     margin-right: 5px;
 }
 
-nav ul .fa-magnifying-glass {
+#sidebar nav ul .fa-magnifying-glass {
     margin-right: 8px;
 }
 
-nav .active {
+#sidebar nav .active {
     border-left: 3px solid #adff2f;
 }
 
-nav .active a, nav .active i {
+#sidebar nav .active a, #sidebar nav .active i {
     color: white;
 }
 
@@ -72,11 +69,10 @@ ul li a:hover {
     color: #ffff;
 }
 
-/* Stili sezione creazione playlist */
+/* Stili Sezione Playlists */
 .playlist-section {
     padding-left: 20px;
     color: #ffff;
-    /* DEBUG */
     flex-grow: 1;
     overflow-y: auto;
 }
@@ -118,11 +114,7 @@ ul li a:hover {
     padding: 10px 0;
 }
 
-/* Stili sezione profilo  */
-#sidebar-down {
-    /* DEBUG*/
-}
-
+/* Stili Sezione Profilo */
 .profile-section {
     padding: 0 20px;
 }
@@ -162,4 +154,33 @@ ul li a:hover {
     background: #a3a3a3a1;
     padding: 2px 3px;
     border-radius: 40px;
+}
+
+/* 
+
+Stili Main Content 
+
+*/
+
+#top-bar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+}
+
+#top-bar .button-box {
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    padding: 10px 35px;
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.content {
+    padding-top: 160px;
 }
