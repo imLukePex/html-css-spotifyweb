@@ -16,6 +16,8 @@
 #main-content {
     flex-grow: 1;
     height: 100%;
+    overflow-y: auto;
+    padding-bottom: 40px;
 }
 
 /* 
@@ -60,24 +62,22 @@ Stili Sidebar
     color: white;
 }
 
-ul li a, ul li i {
+#sidebar ul li a, ul li i {
     font-size: 16px;
     color: #a3a3a3a1;
 }
 
-ul li a:hover {
+#sidebar ul li a:hover {
     color: #ffff;
 }
 
-/* Stili Sezione Playlists */
-.playlist-section {
+/* Stili Sezione Creazione Playlists */
+.add-playlist-container {
     padding-left: 20px;
     color: #ffff;
-    flex-grow: 1;
-    overflow-y: auto;
 }
 
-.playlist-section .section-title {
+.add-playlist-container .section-title {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -110,7 +110,14 @@ ul li a:hover {
     background-color: #ffff;
 }
 
-.playlist-section li {
+/* Sezione Playlists */
+.playlist-box {
+    padding-left: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.playlist-box li {
     padding: 10px 0;
 }
 
@@ -162,14 +169,18 @@ Stili Main Content
 
 */
 
+/* Stili Top Bar */
 #top-bar {
-    width: 100%;
+    width: calc(100% - 250px);
     height: 100px;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.4);
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 200;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 #top-bar .button-box {
@@ -177,10 +188,108 @@ Stili Main Content
     border-radius: 30px;
     padding: 10px 35px;
     color: #ffff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
+    margin-right: 30px;
 }
 
-.content {
-    padding-top: 160px;
+/* Stili Main Content Navbar */
+#main-content .center-navbar {
+    padding-top: 120px;
+    max-width: 60%;
+    margin: 0 auto;
 }
+
+#main-content .center-navbar nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+#main-content .center-navbar a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #a3a3a3a1;
+}
+
+#main-content .center-navbar a:hover {
+    color: #ffff;
+}
+
+.center-navbar .active-section {
+    position: relative;
+}
+
+.active-section::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 30%;
+    background: #adff2f;
+    height: 3px;
+    width: 30px;
+}
+
+/* Stili Copertine Playlists */
+#main-content .content-title {
+    color: #ffff;
+    font-size: 20px;
+    padding-left: 25px;
+    margin-top: 50px;
+}
+
+#main-content .content-subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #a3a3a3a1;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+#main-content .row {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+    padding-left: 25px;
+}
+
+#main-content .col {
+    color: #ffff;
+    text-align: center;
+}
+
+.col .img-container {
+    width: 250px;
+    height: 250px;
+}
+
+.col img {
+    width: 100%;
+}
+
+.col i {
+    display: none;
+}
+
+.col .playlist-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    width: 250px;
+}
+
+.col .playlist-subtitle {
+    color: #a3a3a3a1;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.col .cropped {
+    border-radius: 500px;
+}
+
+
+
+
