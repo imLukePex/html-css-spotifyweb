@@ -25,6 +25,7 @@
 
 .left-section .cover-box img {
     width: 100%;
+    cursor: pointer;
 }
 
 .left-section .music-textbox {
@@ -41,6 +42,10 @@
     font-size: 13px;
 }
 
+.music-textbox .song-title a:hover, .music-textbox .author a:hover {
+    text-decoration: underline;
+}
+
 .left-section .icons-left {
     padding-left: 50px;
 }
@@ -49,6 +54,14 @@
     color: #a3a3a3a1;
     font-size: 17px;
     padding: 0 5px;
+}
+
+.icons-left a:hover {
+    color: #ffff;
+}
+
+.icons-left a:focus {
+    color: #ff0000;
 }
 
 /* Stili Sezione Centrale */
@@ -63,8 +76,21 @@
     color: #c1c1c1;
 }
 
+.center-section .center-up .playbar-icons i {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
 .fa-circle-play {
-    font-size: 32px;
+    font-size: 34px;
+}
+
+.fa-circle-play:hover {
+    color: #ffff;
+}
+
+.center-section .center-up .playbar-icons i:hover {
+    transform: scale(1.1);
 }
 
 .center-section .center-down {
@@ -87,7 +113,7 @@
     background-color: #ffff;
 }
 
-.song-timeline .song-play:hover {
+.song-timeline .active-timeline:hover .song-play {
     background-color: #adff2f;
 }
 
@@ -126,11 +152,20 @@
     padding: 0 8px;
 }
 
+.icons-right i {
+    transition: 0.2s;
+}
+
+.icons-right i:hover {
+    transform: scale(1.1);
+}
+
 .right-section .volume-bar {
     width: 140px;
     height: 4px;
     border-radius: 20px;
     background-color: #a3a3a3a1;
+    cursor: pointer;
 }
 
 .volume-bar .current-volume {
@@ -138,4 +173,23 @@
     height: 3px;
     border-radius: 20px;
     background-color: #ffff;
+}
+
+.volume-bar .active-volume:hover .current-volume {
+    background-color: #adff2f;
+}
+
+.volume-bar .active-volume:hover {
+    position: relative;
+}
+
+.active-volume::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 68%;
+    background: #ffff;
+    height: 13px;
+    width: 13px;
+    border-radius: 20px;
 }

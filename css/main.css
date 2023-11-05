@@ -7,6 +7,7 @@
 
 #sidebar {
     min-width: 250px;
+    max-width: 250px;
     height: 100%;
     background-color: #000000;
     display: flex;
@@ -146,11 +147,12 @@ Stili Sidebar
     color: #a3a3a3a1;
 }
 
+.install-box a:hover {
+    color: #ffff;
+}
+
 .install-box i {
-    font-size: 6px;
-    border: 1px solid #a3a3a3a1;
-    border-radius: 40px;
-    padding: 3px 4px;
+    font-size: 15px;
     margin-right: 10px;   
 }
 
@@ -169,6 +171,7 @@ Stili Sidebar
     background: #a3a3a3a1;
     padding: 2px 3px;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 /* 
@@ -199,6 +202,11 @@ Stili Main Content
     font-size: 14px;
     font-weight: 600;
     margin-right: 30px;
+    transition: 0.4s;
+}
+
+#top-bar .button-box:hover {
+    transform: scale(1.1);
 }
 
 /* Stili Main Content Navbar */
@@ -255,7 +263,6 @@ Stili Main Content
 }
 
 #main-content .row {
-    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5%;
@@ -271,6 +278,12 @@ Stili Main Content
 .col .img-container {
     width: 250px;
     height: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.col .img-container:hover {
+    background-color: #00000054;
 }
 
 .col img {
@@ -279,6 +292,20 @@ Stili Main Content
 
 .col i {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    transition: all 1s ease-in-out;
+}
+
+.col .img-container:hover i {
+    display: block;
+}
+
+.img-container:hover img {
+    opacity: 0.5;
 }
 
 .col .playlist-title {
