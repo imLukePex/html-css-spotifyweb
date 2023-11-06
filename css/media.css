@@ -41,7 +41,7 @@
     }
 
     .install-box a {
-        align-items: center;
+        justify-content: center;
     }
     
     .install-box i {

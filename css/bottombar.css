@@ -2,6 +2,11 @@
     height: 90px;
     background-color: #151515;
     display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 300;
 }
 
 .left-section, .right-section {
@@ -69,11 +74,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .center-section .center-up .playbar-icons {
     margin: 0 20px;
     font-size: 18px;
     color: #c1c1c1;
+}
+
+.center-middle {
+    width: 100%;
 }
 
 .center-section .center-up .playbar-icons i {

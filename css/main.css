@@ -218,15 +218,20 @@ Stili Main Content
 
 /* Stili Main Content Navbar */
 #main-content .center-navbar {
-    padding-top: 120px;
-    max-width: 60%;
+    padding: 120px 50px 0 50px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 #main-content .center-navbar nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3%;
+}
+
+#main-content .center-navbar nav ul li {
+    margin-top: 15px;
 }
 
 #main-content .center-navbar a {
