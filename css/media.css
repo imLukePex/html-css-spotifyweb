@@ -1,0 +1,59 @@
+/* MEDIA QUERY FORMATO XS */
+
+/* MEDIA QUERY SIDEBAR */
+@media all and (max-width: 600px) {
+    #sidebar {
+        min-width: 50px;
+        align-items: center;
+    }
+
+    .logo-box img, .logo-box, #app-section, .add-playlist-container, #playlists {
+        display: none;
+    }
+
+    #app-section-xs {
+        display: block;
+    }
+
+    .profile-section {
+        display: none;
+    }
+
+    .profile-section-xs {
+        display: block;
+        width: 60%;
+    }
+
+    #sidebar nav ul li {
+        padding: 8px 0;
+    }
+
+    #sidebar nav ul .fa-solid {
+        font-size: 25px;
+    }
+
+    #sidebar nav .active {
+        border: none;
+    }
+
+    #sidebar nav ul .fa-solid, #sidebar nav ul .fa-magnifying-glass, #sidebar nav ul .fa-lines-leaning {
+        margin: 0;
+    }
+
+    .install-box a {
+        align-items: center;
+    }
+    
+    .install-box i {
+        margin: 0;
+    }
+    
+    .profile-box img {
+        width: 100%;
+        margin: 0; 
+    }
+
+    #top-bar {
+        width: calc(100% - 50px);
+    }
+}
