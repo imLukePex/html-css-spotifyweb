@@ -7,7 +7,6 @@
 
 #sidebar {
     min-width: 250px;
-    max-width: 250px;
     height: 100%;
     background-color: #000000;
     display: flex;
@@ -78,6 +77,38 @@ Stili Sidebar
 
 #sidebar ul li a:hover i {
     color: #ffff;
+}
+
+#sidebar #app-section-xs {
+    display: none;
+}
+
+#sidebar .profile-section-xs {
+    display: none;
+}
+
+/* MEDIA QUERY SIDEBAR FORMATO XS */
+@media all and (max-width: 552px) {
+    #sidebar {
+        min-width: 50px;
+        align-items: center;
+    }
+
+    .logo-box img, #app-section, .add-playlist-container, #playlists {
+        display: none;
+    }
+
+    #app-section-xs {
+        display: block;
+    }
+
+    .profile-section {
+        display: none;
+    }
+
+    .profile-section-xs {
+        display: block;
+    }
 }
 
 /* Stili Sezione Creazione Playlists */
