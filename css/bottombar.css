@@ -117,6 +117,10 @@
     background-color: #adff2f;
 }
 
+.song-timeline:hover .active-timeline::after {
+    display: block;
+}
+
 .song-timeline .active-timeline:hover {
     position: relative;
 }
@@ -130,6 +134,7 @@
     height: 15px;
     width: 15px;
     border-radius: 20px;
+    display: none;
 }
 
 .center-down .song-time {
@@ -179,7 +184,11 @@
     background-color: #adff2f;
 }
 
-.volume-bar .active-volume:hover {
+.volume-bar:hover .active-volume::after {
+    display: block;
+}
+
+.volume-bar .active-volume {
     position: relative;
 }
 
@@ -192,4 +201,5 @@
     height: 13px;
     width: 13px;
     border-radius: 20px;
+    display: none;
 }
